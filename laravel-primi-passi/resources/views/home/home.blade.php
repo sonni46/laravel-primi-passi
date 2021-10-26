@@ -14,7 +14,7 @@
     </head>
     <body>
        <ul>
-           <li>Hello Word</li>
+           <li>Hello World</li>
        </ul>
        <a href="{{route('menu')}}">{{$nome2}}</a>
     </body>
