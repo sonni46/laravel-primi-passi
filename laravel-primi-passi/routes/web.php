@@ -13,7 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('', function () {
+Route::get('/menu', function () {
+    $data = 
+    [
+        "nome1" => "room404",
+        "nome2" => "home"
+    ];
+    return view("menu.menu",$data);
+})->name('menu');
 
-    return view("home.home");
-});
+Route::get('/home', function () {
+    $data = [
+        "nome2" => "menu"
+    ];
+    return view("home.home",$data);
+})->name('home');
+
+

@@ -16,5 +16,6 @@
        <ul>
            <li>Hello Word</li>
        </ul>
+       <a href="{{route('menu')}}">{{$nome2}}</a>
     </body>
 </html>
